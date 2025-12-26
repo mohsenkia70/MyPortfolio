@@ -1,15 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-
-
-  basePath: "/MyPortfolio",
-  assetPrefix: "/MyPortfolio/",
-
-  trailingSlash: true,
-
+  output: 'export',           // مهم‌ترین خط — سایت استاتیک می‌شه
+  trailingSlash: true,        // برای لینک‌ها بهتر کار کنه
   images: {
-    unoptimized: true,
+    unoptimized: true         // GitHub Pages از بهینه‌سازی تصویر Next.js پشتیبانی نمی‌کنه
   },
 };
 
