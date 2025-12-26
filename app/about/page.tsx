@@ -51,7 +51,7 @@ export default function About() {
             {/* عکس پروفایل — روش درست */}
             <div className="relative mx-auto w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-purple-500/50 shadow-2xl">
               <Image
-                src="/mohsen.jpg"    
+                src="./mohsen.jpg"    
                 alt="Mohsen - Frontend Developer"
                 fill
                 className="object-cover"
