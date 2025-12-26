@@ -1,0 +1,24 @@
+
+
+@import "tailwindcss";
+
+
+@import 'leaflet/dist/leaflet.css';
+@import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css';
+@import 'leaflet-defaulticon-compatibility';
+
+/* فیکس آیکون مارکر پیش‌فرض */
+.leaflet-div-icon {
+  background: transparent;
+  border: none;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 antialiased;
+  }
+}
