@@ -27,7 +27,9 @@ export default function Home() {
         <Particles
           id="tsparticles"
           options={{
-            background: { color: { value: "#111827" } },
+            background: {
+              color: { value: "#111827" },
+            },
             fpsLimit: 120,
             interactivity: {
               events: {
@@ -48,7 +50,10 @@ export default function Home() {
                 width: 1,
               },
               move: { enable: true, speed: 2 },
-              number: { density: { enable: true, area: 800 }, value: 80 },
+              number: {
+                value: 80, // تعداد ثابت پارتیکل — بهترین روش برای ریسپانسیو و استاتیک اکسپورت
+                // density حذف شد چون در v3 دیگر area وجود نداره و در صفحات استاتیک مشکل ایجاد می‌کنه
+              },
               opacity: { value: 0.5 },
               shape: { type: "circle" },
               size: { value: { min: 1, max: 4 } },
