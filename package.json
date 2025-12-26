@@ -4,15 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "export": "next export",
-    "start": "next start",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "build": "next build && next export",
+    "start": "next start"
+    
   },
-
-"homepage": "https://mohsenkia70.github.io/MyPortfolio",
-
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tsparticles/engine": "^3.9.1",
